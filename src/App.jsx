@@ -9,7 +9,7 @@ import ProductDetail from './components/ProductDetail'
 import Header from './components/Header'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <BrowserRouter>
