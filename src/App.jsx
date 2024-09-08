@@ -6,17 +6,19 @@ import { BrowserRouter, Route,  Routes } from 'react-router-dom'
 // import Home from './components/Home'
 import Products from './components/Products'
 import ProductDetail from './components/ProductDetail'
-import Header from './components/Header'
+import Navbar from './components/Navbar'
+import AuthPage from './components/Authpage'
+// import Home from './components/Home'
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <BrowserRouter>
-    <Header />
+    <Navbar />
       <Routes>
         {/* <Route path='/'  element={<Home />} /> */}
-        <Route path='/products'  element={<Products />} />
+        <Route path='/'  element={<Products />} />
         <Route path='/products/:id' element={<ProductDetail />} />
       </Routes>
     </BrowserRouter>
